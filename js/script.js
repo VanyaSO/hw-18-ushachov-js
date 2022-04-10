@@ -1,21 +1,34 @@
 'use strict'
 
-const number = +prompt('Ведите число');
-let isSimple = true;
+const arr = [1, 2, 3, -1, -2, -3];
 
-if(number === 1) {
-    console.log(false)
-} else if(number > 1) {
+function foo(arr){
 
+    const exampleArr = [];
 
-    for (let i = 2; i < number; i++){
-        if(number % i === 0){
-            isSimple = false;
-            break;
+    if (arr.length === 0){
+        return console.log('Масив пустой');
+    }
+
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] > 0){
+            exampleArr.push(arr[i]);
         }
     }
-    console.log(isSimple)
+
+    if(exampleArr.length >= 1){
+        return console.log(exampleArr);
+    }else{
+        return console.log(null);
+    }
+
+
+
+
+
 
 }
+
+foo(arr);
 
 
