@@ -22,11 +22,6 @@ function foo(arr){
         return console.log(null);
     }
 
-
-
-
-
-
 }
 
 foo(arr);
